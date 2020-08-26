@@ -70,7 +70,6 @@ for (let order of myOrders) {
 for (let fill of await market.loadFills(connection)) {
   console.log(
     fill.orderId,
-    fill.owner.toBase58(),
     fill.price,
     fill.size,
     fill.side,
